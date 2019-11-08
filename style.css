@@ -1,0 +1,31 @@
+body{
+    background-color: none;
+    font-family: 'Nunito', sans-serif;
+    background-image: 
+    linear-gradient(rgba(245, 246, 252, 0.65), rgba(34, 222, 235, 0.35));
+    height: 130vh;
+    /*parallax scrolling effect*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+h2{
+    font-size: 35px;
+    color:black;
+}
+h4{
+    font-size: 20px;
+    color:black;
+}
+p{
+    font-size:20px;
+    color:black;
+}

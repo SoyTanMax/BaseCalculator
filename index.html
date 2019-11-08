@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <link rel="stylesheet" type="text/css" href="./style.css">
         <title>Base Converter</title>
     </head>
     <body>
-        <h2>Base Converter</h2>
-        <br>
-        <h4>Number:</h4>
-        <input type="text" id="number">
-        <br>
-        <h4>From base:</h4>
-        <input id="fBase">
-        <br>
-        <h4>To base:</h4>
-        <input id="tBase">
-        <br>
-        <h4>Result:</h4>
-        <p id="result"></p>
-        <br>
-        <br>
-        <button type="button" onclick="convertNumber()">Convert</button>
+        <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">Computer Organization Calculator</a>
+                
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">
+                        Base Converter
+                    </a>
+                
+                    <a class="navbar-item" href="adder.html">
+                        Addition and Subtraction
+                    </a>
+
+                    <a class="navbar-item" href="radix.html">
+                        Radix Complements
+                    </a>
+                
+                    
+                </div>
+        </nav>
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column">
+                
+                <h2 class="center">Base Converter</h2>
+                
+                <h4 class="center">Number:</h4>
+                <div class="field">
+                    <div class="control center">
+                        <input id="number" class="input is-primary is-rounded" type="text" placeholder="Enter the number to convert" style="width:280px;">
+                    </div>
+                </div>
+                
+                <h4 class="center">From base:</h4>
+                <div class="field">
+                    <div class="control center">
+                        <input id="fBase" class="input is-success is-rounded" type="text" placeholder="Enter the base of the number" style="width:280px;">
+                    </div>
+                </div>
+                <h4 class="center">To base:</h4>
+                <div class="field">
+                    <div class="control center">
+                        <input id="tBase" class="input is-info is-rounded" type="text" placeholder="Enter the desired base to convert" style="width:280px;">
+                    </div>
+                </div>
+                <div class="center">
+                    <button class="button is-info is-outlined" type="button" onclick="convertNumber()">Convert</button>
+                </div>
+                <h4 class="center">Result:</h4>
+                <p class="center" id="result"></p>                
+            </div>
+            <div class="column"></div>
+        </div>                         
         <script src="baseConverter.js" type="text/JavaScript"></script>
     </body>
 </html>
